@@ -1,2 +1,12 @@
 # AES
-AES加密
+- AES加密
+    - JDK实现方（256位密钥需要获得无政策限制权限文件）
+        - 密钥长度：128、192、256
+        - 默认长度：128
+        - 工作模式：ECB、CBC、PCBC、CTR、CTS、CFB、CFB8到128、OFB、OFB8到128
+        - 填充方式：NoPadding、PKCS5Padding、ISO10126Padding
+    - BC实现方
+        - 密钥长度：128、192、256
+        - 默认长度：128
+        - 工作模式：ECB、CBC、PCBC、CTR、CTS、CFB、CFB8到128、OFB、OFB8到128
+        - 填充方式：PKCS7Padding、ZeroBytePadding
