@@ -15,13 +15,13 @@ import java.security.NoSuchAlgorithmException;
  */
 public class AES {
     private static final String CHAR_ENCODING = "UTF-8";
-    public static final String KEY = "zhu guolong!sdfgsdfgssdfg";
+    static final String KEY = "zhu guolong!sdfgsdfgssdfg";
 
     /**
      * 生成key
      * @return
      */
-    public static Key generatorKey(String key) {
+    private static Key generatorKey(String key) {
         try {
             if (key.length() < 16) {
                 throw new RuntimeException("Invalid AES key length! (must be 16 bytes)");
@@ -68,7 +68,7 @@ public class AES {
     }
 
     /**
-     * 揭秘
+     * 解密
      * @param key 解密key
      * @param encrypt 解密内容（Base64编码的字符串）
      * @return
